@@ -1,0 +1,40 @@
+<div class="container mx-auto relative flex justify-center h-full">
+    <img src="/img/syaamil.png" class="absolute z-10" />
+    <h1 class="text-9xl text-center font-black absolute z-0 opacity-80">
+        <span class="first-ln">FULL-STACK</span>
+        <br />
+        <span class="second-ln">DEVELOPER</span>
+        <br />
+        <span class="third-ln">UI/UX DESIGNER</span>
+    </h1>
+</div>
+
+<style>
+    h1 {
+        font-family: "Montserrat Alternates", sans-serif;
+    }
+
+    .first-ln,
+    .third-ln {
+        color: var(--imperialred);
+    }
+
+    .second-ln {
+        color: var(--lightgray);
+    }
+
+    .container img,
+    .container h1 {
+        transition: all 0.5s ease-in-out;
+        animation: slidein 2s;
+    }
+
+    @keyframes slidein {
+        from {
+            transform: translateX(-200%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+</style>
