@@ -13,12 +13,6 @@ module.exports = {
             xl: "1280px",
             "2xl": "1536px",
         },
-        colors: {
-            cultured: "#F6F6F6",
-            platinum: "#E8E8E8",
-            jet: "#333333",
-            airblue: "#669BBC",
-        },
     },
     plugins: [],
 };
