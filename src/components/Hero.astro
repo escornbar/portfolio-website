@@ -1,73 +1,110 @@
-<div class="hidden items-center justify-end h-[100vh] overflow-hidden bg-[url(/img/hero-bg.jpg)] lg:flex">
-        <img
-            src="/img/syaamil-wobg.png"
-            alt="hero image"
-            class="z-10 absolute w-auto h-full object-cover"
-        />
-    <div class="container mx-auto flex flex-col items-center gap-16">
-        <div class="z-0">
-            <h1 class="text-[2rem] whitespace-nowrap ioe">FULL-STACK <span class="platinum">DEVELOPER</span></h1>
+<div
+    class="mx-auto flex flex-col justify-end items-center gap-16 overflow-clip p-8 md:gap-20 lg:gap-28 2xl:gap-44"
+    id="hero"
+>
+    <div class="flex flex-col items-center gap-4">
+        <h1
+            class="text-3xl whitespace-nowrap tracking-widest md:text-4xl 2xl:text-6xl"
+        >
+            FULL-STACK DEVELOPER
+        </h1>
+        <div class="marquee">
+            <ul class="marquee__content">
+                <li
+                    class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
+                >
+                    PORTFOLIO
+                </li>
+                <li
+                    class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
+                >
+                    PORTFOLIO
+                </li>
+                <li
+                    class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
+                >
+                    PORTFOLIO
+                </li>
+            </ul>
+            <!-- Mirrors the content above -->
+            <ul class="marquee__content" aria-hidden="true">
+                <li
+                    class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
+                >
+                    PORTFOLIO
+                </li>
+                <li
+                    class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
+                >
+                    PORTFOLIO
+                </li>
+                <li
+                    class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
+                >
+                    PORTFOLIO
+                </li>
+            </ul>
         </div>
-        <div class="z-10 whitespace-nowrap flex justify-start overflow-hidden ">
-            <h1 class="text-[6rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-            <h1 class="text-[6rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-            <h1 class="text-[6rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-            <h1 class="text-[6rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-        </div>
-        <div class="z-0">
-            <h1 class="text-[2rem] whitespace-nowrap platinum">UI/UX <span class="ioe">DESIGNER</span></h1>
-        </div>
-    </div>
-</div>
 
-<div class="flex h-[100vh] justify-end overflow-hidden bg-[url(/img/hero-bg.jpg)] lg:hidden">
-        <img
-            src="/img/syaamil-wobg.png"
-            alt="hero image"
-            class="z-10 absolute w-auto h-full object-cover object-[left_-3rem_top_1rem] mobile-md:object-[left_0_top_1rem]"
-        />
-    <div class="container mx-auto flex flex-col gap-14">
-        <div class="container mx-auto flex flex-col gap-10 py-16 pl-2">
-            <div class="z-0">
-                <h1 class="text-[2.3rem] leading-none ioe md:text-[3rem]">FULL-STACK <br/> <span class="platinum">DEVELOPER</span></h1>
-            </div>
-            <div class="z-0">
-                <h1 class="text-[2.3rem] leading-none platinum md:text-[3rem]">UI/UX <br/> <span class="ioe">DESIGNER</span></h1>
-            </div>
-        </div>
-        <div class="z-10 whitespace-nowrap flex justify-start overflow-hidden ">
-            <h1 class="text-[3rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-            <h1 class="text-[3rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-            <h1 class="text-[3rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-            <h1 class="text-[3rem] tracking-widest font-black whitespace-nowrap pl-10" id="marquee">SYAAMIL FA'IQ <span class="ioe">-</span></h1>
-        </div>
+        <h1
+            class="text-3xl whitespace-nowrap tracking-widest md:text-4xl 2xl:text-6xl"
+        >
+            UI/UX DESIGNER
+        </h1>
+    </div>
+    <div class="flex justify-center items-center">
+        <h1
+            class="pl-4 text-7xl text-center leading-none tracking-widest md:text-[8rem] md:whitespace-nowrap lg:text-[11rem] xl:text-[12rem] xl:tracking-[2rem]"
+        >
+            SYAAMIL FA'IQ
+        </h1>
     </div>
 </div>
 
 <style>
+    #hero {
+        background-image: url("/img/hero-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 95vh;
+        width: 100%;
+    }
+
     h1 {
-        font-family: "Poppins", sans-serif;
-        color: var(--platinum);
+        font-family: "Bebas Neue", cursive;
+        color: var(--cultured);
     }
 
-    .ioe {
-        color: var(--ioe);
+    .marquee {
+        --gap: 1rem;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: var(--gap);
     }
 
-    .platinum {
-        color: var(--platinum);
+    .marquee__content {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: var(--gap);
+        min-width: 100%;
+        animation: scroll 10s linear infinite;
+    }
+    .marquee__content li {
+        font-family: "Bebas Neue", cursive;
+        text-shadow: -1px -1px 0 var(--cultured), 1px -1px 0 var(--cultured),
+            -1px 1px 0 var(--cultured), 1px 1px 0 var(--cultured);
     }
 
-    #marquee {
-        animation: marquee 5s linear infinite;
-    }
-
-    @keyframes marquee {
-        0% {
+    @keyframes scroll {
+        from {
             transform: translateX(0);
         }
-        100% {
-            transform: translateX(-100%);
+        to {
+            transform: translateX(calc(-100% - var(--gap)));
         }
     }
 </style>
