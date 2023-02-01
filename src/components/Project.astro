@@ -5,14 +5,30 @@
         <div
             class="flex items-center justify-center gap-4 mb-8 md:flex-col md:justify-evenly-around md:mb-0 md:pl-12 lg:pl-16 xl:pl-20"
         >
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">P</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">R</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">O</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">J</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">E</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">C</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">T</h1>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl xl:text-9xl">S</h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                P
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                R
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                O
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                J
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                E
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                C
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                T
+            </h1>
+            <h1 class="no-show text-5xl md:text-7xl lg:text-8xl xl:text-9xl">
+                S
+            </h1>
         </div>
         <div class="flex flex-col items-center justify-center">
             <a
@@ -29,7 +45,11 @@
                 <div
                     class="overlay h-[calc(100vw/3)] flex flex-col justify-center p-8 lg:p-12 xl:p-16 2xl:p-20 bg-white/[0.7] opacity-0 hover:opacity-100 transition duration-700"
                 >
-                    <h1 class="desc-title md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Vokal</h1>
+                    <h1
+                        class="desc-title md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
+                    >
+                        Vokal
+                    </h1>
                     <p class="desc lg:text-md xl:text-lg 2xl:text-2xl">
                         An application that utilizes an AI-powered voice
                         recognition model to determine the gender of a speaker
@@ -53,7 +73,9 @@
                 <div
                     class="overlay h-[calc(100vw/3)] flex flex-col justify-center p-8 lg:p-12 xl:p-16 2xl:p-20 bg-white/[0.7] opacity-0 hover:opacity-100 transition duration-700"
                 >
-                    <h1 class="desc-title md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">
+                    <h1
+                        class="desc-title md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
+                    >
                         Automated Inventory Management System (AIMS)
                     </h1>
                     <p class="desc lg:text-md xl:text-lg 2xl:text-2xl">
@@ -80,7 +102,11 @@
                 <div
                     class="overlay h-[calc(100vw/3)] flex flex-col justify-center p-8 lg:p-12 xl:p-16 2xl:p-20 bg-white/[0.7] opacity-0 hover:opacity-100 transition duration-700"
                 >
-                    <h1 class="desc-title md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Objetivo</h1>
+                    <h1
+                        class="desc-title md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
+                    >
+                        Objetivo
+                    </h1>
                     <p class="desc lg:text-md xl:text-lg 2xl:text-2xl">
                         A goal tracking app designed to help individuals reach
                         their aspirations. The app allows users to add their
@@ -120,5 +146,18 @@
     .button,
     .overlay {
         grid-area: 1/1;
+    }
+
+    .no-show {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(200%);
+        transition: all 1s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0);
     }
 </style>

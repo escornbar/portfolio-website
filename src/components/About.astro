@@ -2,11 +2,11 @@
     class="container mx-auto justify-center items-center py-8 md:flex md:gap-6 md:py-12 lg:py-16 xl:gap-14 xl:py-20"
 >
     <div class="flex flex-col md:basis-2/3">
-        <h1 class="text-4xl tracking-widest mb-4 md:text-6xl lg:text-8xl">
+        <h1 class="no-show text-4xl tracking-widest mb-4 md:text-6xl lg:text-8xl">
             Hi! I'm <br />
-            <span>SYAAMIL FA'IQ</span>
+            <span data-text="SYAAMIL FA'IQ">SYAAMIL FA'IQ</span>
         </h1>
-        <p class="mb-8 md:mb-0 lg:text-xl lg:text-justify xl:text-3xl">
+        <p class="no-show mb-8 md:mb-0 lg:text-xl lg:text-justify xl:text-3xl">
             I'm a final year software engineering student from Universiti Malaya
             also an aspiring full-stack web developer with a passion for
             front-end development and web design.
@@ -35,5 +35,18 @@
     p {
         font-family: "Barlow Semi Condensed", sans-serif;
         color: var(--cultured);
+    }
+
+    .no-show {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 2s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0);
     }
 </style>

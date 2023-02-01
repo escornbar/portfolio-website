@@ -2,7 +2,7 @@
     class="flex flex-col items-center justify-end gap-16 p-8 mx-auto overflow-clip md:gap-20 lg:gap-28 2xl:gap-44"
     id="hero"
 >
-    <div class="flex flex-col items-center gap-4">
+    <div class="no-show flex flex-col items-center gap-4">
         <h1
             class="text-3xl tracking-widest whitespace-nowrap md:text-4xl 2xl:text-6xl"
         >
@@ -52,7 +52,7 @@
             UI/UX DESIGNER
         </h1>
     </div>
-    <div class="flex items-center justify-center">
+    <div class="no-show flex items-center justify-center">
         <h1
             class="pl-4 text-7xl text-center leading-none tracking-widest md:text-[8rem] md:whitespace-nowrap lg:text-[11rem] xl:text-[12rem] xl:tracking-[2rem]"
         >
@@ -106,5 +106,18 @@
         to {
             transform: translateX(calc(-100% - var(--gap)));
         }
+    }
+
+    .no-show {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(-100%);
+        transition: all 2s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0);
     }
 </style>
