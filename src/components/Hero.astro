@@ -8,7 +8,7 @@
         >
             FULL-STACK DEVELOPER
         </h1>
-        <div class="marquee">
+        <!-- <div class="marquee">
             <ul class="marquee__content">
                 <li
                     class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
@@ -26,7 +26,6 @@
                     PORTFOLIO
                 </li>
             </ul>
-            <!-- Mirrors the content above -->
             <ul class="marquee__content" aria-hidden="true">
                 <li
                     class="text-5xl tracking-widest whitespace-nowrap md:text-6xl 2xl:text-8xl"
@@ -44,7 +43,7 @@
                     PORTFOLIO
                 </li>
             </ul>
-        </div>
+        </div> -->
 
         <h1
             class="text-3xl tracking-widest whitespace-nowrap md:text-4xl 2xl:text-6xl"
@@ -74,38 +73,6 @@
     h1 {
         font-family: "Bebas Neue", cursive;
         color: var(--cultured);
-    }
-
-    .marquee {
-        --gap: 1rem;
-        position: relative;
-        display: flex;
-        overflow: hidden;
-        user-select: none;
-        gap: var(--gap);
-    }
-
-    .marquee__content {
-        flex-shrink: 0;
-        display: flex;
-        justify-content: space-around;
-        gap: var(--gap);
-        min-width: 100%;
-        animation: scroll 10s linear infinite;
-    }
-    .marquee__content li {
-        font-family: "Bebas Neue", cursive;
-        text-shadow: -1px -1px 0 var(--cultured), 1px -1px 0 var(--cultured),
-            -1px 1px 0 var(--cultured), 1px 1px 0 var(--cultured);
-    }
-
-    @keyframes scroll {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(calc(-100% - var(--gap)));
-        }
     }
 
     .no-show {
