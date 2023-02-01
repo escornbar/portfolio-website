@@ -5,32 +5,33 @@
         <div
             class="flex items-center justify-center gap-4 mb-8 md:flex-col md:justify-evenly-around md:mb-0 md:pl-12 lg:pl-16 xl:pl-20"
         >
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 P
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 R
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 O
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 J
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 E
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 C
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 T
             </h1>
-            <h1 class="text-5xl no-show md:text-7xl lg:text-8xl xl:text-9xl">
+            <h1 class="text-5xl no-show slide-right lg:text-8xl xl:text-9xl">
                 S
             </h1>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        
+        <div class="flex-col items-center justify-center hidden lg:flex">
             <a
                 class="wrapper"
                 href="https://github.com/GnosisUM/Vokal"
@@ -119,6 +120,88 @@
                 </div>
             </a>
         </div>
+        
+        <div class="flex flex-col items-center justify-center lg:hidden">
+            <a
+                class="grid-cols-3 wrapper"
+                href="https://github.com/GnosisUM/Vokal"
+                target="_blank"
+            >
+                <div class="z-10 flex col-span-1 overflow-hidden">
+                    <img
+                        src="/portfolio-website/img/vokal.jpg"
+                        class="object-cover w-full h-full"
+                    />
+                </div>
+                <div
+                    class="flex flex-col col-span-2 p-4 bg-white no-show slide-left"
+                >
+                    <h1 class="text-2xl desc-title">Vokal</h1>
+                    <p class="text-[0.7rem] desc">
+                        An application that utilizes an AI-powered voice
+                        recognition model to determine the gender of a speaker
+                        and generate an appropriate caption for their speech.
+                        The application can quickly analyze the speaker's voice,
+                        accurately identify if they are male or female, and then
+                        generate a caption that is tailored to their gender.
+                    </p>
+                </div>
+            </a>
+            <a
+                class="grid-cols-3 wrapper"
+                href="https://github.com/alifmazli/automated-inventory-management-system"
+                target="_blank"
+            >
+                <div class="z-10 flex col-span-1 overflow-hidden">
+                    <img
+                        src="/portfolio-website/img/aims.jpg"
+                        class="object-cover w-full h-full"
+                    />
+                </div>
+                <div
+                    class="flex flex-col col-span-2 p-4 bg-white no-show slide-left"
+                >
+                    <h1 class="text-2xl desc-title">
+                        AUTOMATED INVENTORY MANAGEMENT SYSTEM (AIMS)
+                    </h1>
+                    <p class="text-[0.7rem] desc">
+                        An automated inventory management system that
+                        streamlines the inventory process for businesses. The
+                        system has the ability to access email, extract relevant
+                        data, and perform data cleaning to ensure accuracy. With
+                        this system, businesses can keep track of their stock
+                        levels, minimize waste and save time by automating
+                        manual processes.
+                    </p>
+                </div>
+            </a>
+            <a
+                class="grid-cols-3 wrapper"
+                href="https://github.com/xputerax/objetivo-full"
+                target="_blank"
+            >
+                <div class="z-10 flex col-span-1 overflow-hidden">
+                    <img
+                        src="/portfolio-website/img/objetivo.jpg"
+                        class="object-cover w-full h-full"
+                    />
+                </div>
+                <div
+                    class="flex flex-col col-span-2 p-4 bg-white no-show slide-left"
+                >
+                    <h1 class="text-2xl desc-title">Objetivo</h1>
+                    <p class="text-[0.7rem] desc">
+                        A goal tracking app designed to help individuals reach
+                        their aspirations. The app allows users to add their
+                        personal goals and assign them to a designated mentor
+                        for added accountability and support. With this app,
+                        users can set and track progress towards their goals,
+                        receive motivation and guidance from their mentor, and
+                        ultimately achieve their aspirations.
+                    </p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -140,7 +223,6 @@
 
     .wrapper {
         display: grid;
-        background-color: var(--cultured);
     }
 
     .button,
@@ -151,13 +233,20 @@
     .no-show {
         opacity: 0;
         filter: blur(5px);
-        transform: translateX(200%);
-        transition: all 1s;
+        /* transform: translateX(100%); */
+        transition: all 2s;
     }
 
     .show {
         opacity: 1;
         filter: blur(0px);
-        transform: translateX(0);
+        transform: translateX(0) !important;
+    }
+
+    .slide-left {
+        transform: translateX(-100%);
+    }
+    .slide-right {
+        transform: translateX(200%);
     }
 </style>
